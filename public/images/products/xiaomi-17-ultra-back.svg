@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <!-- Dark Textured Body -->
+    <linearGradient id="xiaomi-leather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="50%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <!-- Giant Circular Dial Ring -->
+    <linearGradient id="ring-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <radialGradient id="leica-center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="85%" stop-color="#030712"/>
+    </radialGradient>
+    <radialGradient id="lens-blue" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <filter id="dial-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Body -->
+  <rect x="52" y="32" width="296" height="636" rx="40" fill="#262626"/>
+  <rect x="55" y="35" width="290" height="630" rx="37" fill="url(#xiaomi-leather)"/>
+
+  <!-- Giant Leica Camera Island -->
+  <g transform="translate(200, 200)" filter="url(#dial-shadow)">
+    <!-- Gold knurled outer ring -->
+    <circle cx="0" cy="0" r="110" fill="url(#ring-gold)" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Black textured inner ring -->
+    <circle cx="0" cy="0" r="102" fill="#09090b" stroke="#3f3f46" stroke-width="2"/>
+    <!-- Glass center -->
+    <circle cx="0" cy="0" r="95" fill="url(#leica-center)"/>
+
+    <!-- Leica Red Dot Logo at top of circle -->
+    <circle cx="0" cy="-55" r="9" fill="#dc2626"/>
+    <text x="0" y="-52" font-family="serif" font-size="7" font-weight="bold" fill="#ffffff" text-anchor="middle" font-style="italic">Leica</text>
+
+    <!-- 4 Lenses in diamond/cross layout -->
+    <!-- Top Lens -->
+    <circle cx="0" cy="-22" r="22" fill="#18181b" stroke="#52525b" stroke-width="2"/>
+    <circle cx="0" cy="-22" r="14" fill="url(#lens-blue)"/>
+    <circle cx="-4" cy="-26" r="4" fill="#ffffff" opacity="0.6"/>
+
+    <!-- Bottom Periscope Lens -->
+    <circle cx="0" cy="46" r="22" fill="#18181b" stroke="#52525b" stroke-width="2"/>
+    <rect x="-8" y="38" width="16" height="16" rx="3" fill="url(#lens-blue)" stroke="#38bdf8" stroke-width="1"/>
+
+    <!-- Left Lens -->
+    <circle cx="-52" cy="12" r="22" fill="#18181b" stroke="#52525b" stroke-width="2"/>
+    <circle cx="-52" cy="12" r="14" fill="url(#lens-blue)"/>
+    <circle cx="-56" cy="8" r="4" fill="#ffffff" opacity="0.6"/>
+
+    <!-- Right Lens -->
+    <circle cx="52" cy="12" r="22" fill="#18181b" stroke="#52525b" stroke-width="2"/>
+    <circle cx="52" cy="12" r="14" fill="url(#lens-blue)"/>
+    <circle cx="48" cy="8" r="4" fill="#ffffff" opacity="0.6"/>
+
+    <!-- Flash -->
+    <circle cx="0" cy="12" r="8" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  </g>
+
+  <!-- Xiaomi branding -->
+  <text x="200" y="615" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#a1a1aa" text-anchor="middle" letter-spacing="3">Xiaomi</text>
+</svg>

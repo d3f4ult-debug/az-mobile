@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="watch-titanium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#474a51"/>
+      <stop offset="50%" stop-color="#34373e"/>
+      <stop offset="100%" stop-color="#23252a"/>
+    </linearGradient>
+    <radialGradient id="ceramic-cluster" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e2024"/>
+      <stop offset="70%" stop-color="#111215"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Watch Strap Connectors (Top and Bottom) -->
+  <rect x="150" y="30" width="200" height="40" rx="10" fill="#3f3f46"/>
+  <rect x="150" y="530" width="200" height="40" rx="10" fill="#3f3f46"/>
+
+  <!-- Watch Titanium Chassis -->
+  <rect x="100" y="60" width="300" height="380" rx="80" fill="url(#watch-titanium)" stroke="#52525b" stroke-width="3" filter="url(#shadow)"/>
+
+  <!-- Orange Action Button Edge (Left) -->
+  <rect x="94" y="160" width="8" height="70" rx="4" fill="#f97316"/>
+
+  <!-- Digital Crown Edge (Right) -->
+  <rect x="398" y="140" width="12" height="90" rx="5" fill="#3f3f46" stroke="#f97316" stroke-width="2"/>
+
+  <!-- Ceramic & Sapphire Sensor Cluster (Circular center) -->
+  <g transform="translate(250, 250)">
+    <!-- Outer Ceramic Ring -->
+    <circle cx="0" cy="0" r="115" fill="url(#ceramic-cluster)" stroke="#27272a" stroke-width="4"/>
+    
+    <!-- Sensor Inscription Ring -->
+    <path id="sensor-text-path" d="M -90,0 A 90 90 0 1 1 90,0 A 90 90 0 1 1 -90,0" fill="none"/>
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="600" fill="#71717a" letter-spacing="1.5">
+      <textPath href="#sensor-text-path" startOffset="5%">
+        WATCH ULTRA 3 • 49MM TITANIUM • 100M WATER RESISTANT • CERAMIC BACK • SAPPHIRE CRYSTAL
+      </textPath>
+    </text>
+
+    <!-- Inner 4-LED / Photodiode Array -->
+    <circle cx="0" cy="0" r="54" fill="#09090b" stroke="#3f3f46" stroke-width="2"/>
+    
+    <!-- Optical Heart Rate / ECG Sensors -->
+    <circle cx="-22" cy="0" r="10" fill="#15803d" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+    <circle cx="22" cy="0" r="10" fill="#15803d" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+    <circle cx="0" cy="-22" r="10" fill="#dc2626" stroke="#ef4444" stroke-width="2" opacity="0.9"/>
+    <circle cx="0" cy="22" r="10" fill="#dc2626" stroke="#ef4444" stroke-width="2" opacity="0.9"/>
+  </g>
+</svg>

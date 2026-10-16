@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="body-titanium-black" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2c2e"/>
+      <stop offset="50%" stop-color="#1f2123"/>
+      <stop offset="100%" stop-color="#131415"/>
+    </linearGradient>
+    <linearGradient id="frame-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#404347"/>
+      <stop offset="50%" stop-color="#6b7280"/>
+      <stop offset="100%" stop-color="#374151"/>
+    </linearGradient>
+    <radialGradient id="lens-refl" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#0369a1" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Phone Body Outer Frame -->
+  <rect x="50" y="30" width="300" height="640" rx="36" fill="url(#frame-grad)" filter="url(#shadow)"/>
+  
+  <!-- Matte Glass Back Panel -->
+  <rect x="53" y="33" width="294" height="634" rx="33" fill="url(#body-titanium-black)"/>
+  
+  <!-- Subtle Back Highlight -->
+  <path d="M 60,40 L 220,40 Q 90,300 70,600 L 60,600 Z" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Camera Ring 1 (Top Ultra-wide) -->
+  <g transform="translate(80, 70)">
+    <circle cx="28" cy="28" r="28" fill="#18181b" stroke="#71717a" stroke-width="3"/>
+    <circle cx="28" cy="28" r="22" fill="#09090b" stroke="#27272a" stroke-width="2"/>
+    <circle cx="28" cy="28" r="16" fill="url(#lens-refl)"/>
+    <circle cx="23" cy="23" r="5" fill="#ffffff" opacity="0.4"/>
+  </g>
+
+  <!-- Camera Ring 2 (Middle Main 200MP) -->
+  <g transform="translate(80, 140)">
+    <circle cx="28" cy="28" r="28" fill="#18181b" stroke="#71717a" stroke-width="3"/>
+    <circle cx="28" cy="28" r="22" fill="#09090b" stroke="#27272a" stroke-width="2"/>
+    <circle cx="28" cy="28" r="16" fill="url(#lens-refl)"/>
+    <circle cx="23" cy="23" r="5" fill="#ffffff" opacity="0.4"/>
+  </g>
+
+  <!-- Camera Ring 3 (Bottom Periscope Telephoto) -->
+  <g transform="translate(80, 210)">
+    <circle cx="28" cy="28" r="28" fill="#18181b" stroke="#71717a" stroke-width="3"/>
+    <circle cx="28" cy="28" r="22" fill="#09090b" stroke="#27272a" stroke-width="2"/>
+    <circle cx="28" cy="28" r="16" fill="url(#lens-refl)"/>
+    <rect x="20" y="20" width="16" height="16" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- Secondary Sensor Column (Right side) -->
+  <!-- Flash -->
+  <circle cx="165" cy="98" r="12" fill="#27272a" stroke="#52525b" stroke-width="2"/>
+  <circle cx="165" cy="98" r="8" fill="#fef08a" opacity="0.9"/>
+
+  <!-- Laser Auto-Focus -->
+  <circle cx="165" cy="155" r="16" fill="#18181b" stroke="#71717a" stroke-width="2"/>
+  <circle cx="165" cy="155" r="9" fill="#dc2626" opacity="0.8"/>
+
+  <!-- 3x Telephoto Small Lens -->
+  <circle cx="165" cy="222" r="18" fill="#18181b" stroke="#71717a" stroke-width="2"/>
+  <circle cx="165" cy="222" r="11" fill="url(#lens-refl)"/>
+
+  <!-- Samsung Logo -->
+  <text x="200" y="605" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#71717a" text-anchor="middle" letter-spacing="4">SAMSUNG</text>
+</svg>

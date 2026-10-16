@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="redmi-back" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="50%" stop-color="#115e59"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+    <linearGradient id="redmi-bump" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134e4a"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+    <radialGradient id="redmi-lens" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#0d9488" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#090d16" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="52" y="32" width="296" height="636" rx="42" fill="#0d9488" filter="url(#shadow)"/>
+
+  <!-- Back Panel -->
+  <rect x="56" y="36" width="288" height="628" rx="38" fill="url(#redmi-back)"/>
+
+  <!-- Light Refraction Shimmer -->
+  <path d="M 56,80 Q 240,240 180,664 L 140,664 Q 180,240 56,120 Z" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Camera Island Squircle -->
+  <rect x="74" y="64" width="150" height="150" rx="32" fill="url(#redmi-bump)" stroke="#14b8a6" stroke-width="1.5"/>
+
+  <!-- Main Camera (Top Left) -->
+  <g transform="translate(86, 76)">
+    <circle cx="28" cy="28" r="26" fill="#042f2e" stroke="#2dd4bf" stroke-width="2"/>
+    <circle cx="28" cy="28" r="20" fill="url(#redmi-lens)"/>
+    <circle cx="22" cy="22" r="5" fill="#ffffff" opacity="0.55"/>
+  </g>
+
+  <!-- Secondary Camera (Top Right) -->
+  <g transform="translate(154, 76)">
+    <circle cx="28" cy="28" r="22" fill="#042f2e" stroke="#14b8a6" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="16" fill="url(#redmi-lens)"/>
+    <circle cx="23" cy="23" r="4" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <!-- Macro / Depth (Bottom Left) -->
+  <g transform="translate(86, 144)">
+    <circle cx="28" cy="28" r="18" fill="#042f2e" stroke="#0f766e" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="12" fill="url(#redmi-lens)"/>
+  </g>
+
+  <!-- Ring Flash (Bottom Right) -->
+  <g transform="translate(154, 144)">
+    <circle cx="28" cy="28" r="16" fill="#042f2e" stroke="#2dd4bf" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="8" fill="#fef08a" opacity="0.95"/>
+  </g>
+
+  <!-- Redmi Branding -->
+  <text x="200" y="616" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="4" fill="#5eead4" opacity="0.8" text-anchor="middle">Redmi</text>
+</svg>

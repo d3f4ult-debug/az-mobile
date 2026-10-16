@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="honor-back" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="honor-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <radialGradient id="honor-lens" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.75"/>
+      <stop offset="35%" stop-color="#4338ca" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="52" y="32" width="296" height="636" rx="42" fill="url(#honor-gold)" filter="url(#shadow)"/>
+
+  <!-- Back Panel -->
+  <rect x="55" y="35" width="290" height="630" rx="39" fill="url(#honor-back)"/>
+
+  <!-- Centered Circular Matrix Camera Ring (Signature Honor Flagship Style) -->
+  <g transform="translate(200, 190)">
+    <!-- Outer Gold Bezel -->
+    <circle cx="0" cy="0" r="95" fill="#0f172a" stroke="url(#honor-gold)" stroke-width="3.5" filter="url(#shadow)"/>
+    
+    <!-- Inner Dark Disc -->
+    <circle cx="0" cy="0" r="90" fill="#09090b"/>
+    <circle cx="0" cy="0" r="42" fill="url(#honor-back)" stroke="#312e81" stroke-width="1"/>
+    
+    <!-- Matrix Center Text -->
+    <text x="0" y="-3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" fill="#fef08a" text-anchor="middle">MATRIX</text>
+    <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="500" letter-spacing="1" fill="#94a3b8" text-anchor="middle">108MP AI</text>
+
+    <!-- Top Camera -->
+    <g transform="translate(0, -64)">
+      <circle cx="0" cy="0" r="19" fill="#020617" stroke="url(#honor-gold)" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="14" fill="url(#honor-lens)"/>
+      <circle cx="-4" cy="-4" r="4" fill="#ffffff" opacity="0.5"/>
+    </g>
+
+    <!-- Bottom Camera -->
+    <g transform="translate(0, 64)">
+      <circle cx="0" cy="0" r="19" fill="#020617" stroke="url(#honor-gold)" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="14" fill="url(#honor-lens)"/>
+      <circle cx="-4" cy="-4" r="4" fill="#ffffff" opacity="0.5"/>
+    </g>
+
+    <!-- Left Camera -->
+    <g transform="translate(-64, 0)">
+      <circle cx="0" cy="0" r="19" fill="#020617" stroke="url(#honor-gold)" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="14" fill="url(#honor-lens)"/>
+      <circle cx="-4" cy="-4" r="4" fill="#ffffff" opacity="0.5"/>
+    </g>
+
+    <!-- Right Flash -->
+    <g transform="translate(64, 0)">
+      <circle cx="0" cy="0" r="16" fill="#020617" stroke="url(#honor-gold)" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="8" fill="#fef08a" opacity="0.95"/>
+    </g>
+  </g>
+
+  <!-- Honor Brand Logo -->
+  <text x="200" y="616" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" letter-spacing="4" fill="#e2e8f0" opacity="0.85" text-anchor="middle">HONOR</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ipad-space-black" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3034"/>
+      <stop offset="50%" stop-color="#1e2022"/>
+      <stop offset="100%" stop-color="#141516"/>
+    </linearGradient>
+    <radialGradient id="ipad-lens" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#0284c7" stop-opacity="0.5"/>
+      <stop offset="85%" stop-color="#090d16" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- iPad Frame -->
+  <rect x="35" y="25" width="480" height="650" rx="36" fill="#18191b" filter="url(#shadow)"/>
+
+  <!-- Back Matte Aluminum Surface -->
+  <rect x="38" y="28" width="474" height="644" rx="33" fill="url(#ipad-space-black)"/>
+
+  <!-- Camera Bump (Top Left) -->
+  <g transform="translate(60, 50)">
+    <rect x="0" y="0" width="80" height="80" rx="20" fill="#24272a" stroke="#374151" stroke-width="1.5"/>
+    <!-- Main Camera -->
+    <g transform="translate(18, 18)">
+      <circle cx="14" cy="14" r="14" fill="#09090b" stroke="#4b5563" stroke-width="1.5"/>
+      <circle cx="14" cy="14" r="10" fill="url(#ipad-lens)"/>
+      <circle cx="11" cy="11" r="3" fill="#ffffff" opacity="0.6"/>
+    </g>
+    <!-- LiDAR Scanner -->
+    <circle cx="56" cy="32" r="7" fill="#09090b" stroke="#374151" stroke-width="1"/>
+    <!-- True Tone Flash -->
+    <circle cx="32" cy="56" r="6" fill="#fef08a" opacity="0.9"/>
+    <!-- Microphone -->
+    <circle cx="56" cy="56" r="2.5" fill="#09090b"/>
+  </g>
+
+  <!-- Centered Apple Logo (Polished Mirror Dark Chrome) -->
+  <g transform="translate(275, 340) scale(1.6)">
+    <path d="M 0 -22 C 3 -22 6 -20 8 -17 C 5 -15 3 -11 5 -6 C 7 -1 11 1 12 1 C 12 2 10 7 7 11 C 5 14 3 16 0 16 C -3 16 -5 14 -8 14 C -11 14 -13 16 -16 16 C -19 12 -22 6 -20 -1 C -18 -8 -13 -13 -8 -13 C -5 -13 -3 -11 0 -11 C 3 -11 5 -13 8 -13 Z" fill="#4b5563"/>
+    <path d="M 0 -24 C 2 -27 4 -31 3 -35 C -1 -35 -5 -32 -6 -29 C -7 -26 -5 -23 0 -24 Z" fill="#4b5563"/>
+  </g>
+
+  <!-- iPad Smart Connector (3 magnetic gold contacts at the bottom) -->
+  <g transform="translate(275, 630)">
+    <circle cx="-16" cy="0" r="3" fill="#ca8a04"/>
+    <circle cx="0" cy="0" r="3" fill="#ca8a04"/>
+    <circle cx="16" cy="0" r="3" fill="#ca8a04"/>
+  </g>
+</svg>

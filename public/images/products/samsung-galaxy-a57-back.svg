@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="a57-back" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="40%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="a57-frame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <radialGradient id="a57-lens" cx="35%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="35%" stop-color="#0369a1" stop-opacity="0.6"/>
+      <stop offset="80%" stop-color="#090d16" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="52" y="32" width="296" height="636" rx="44" fill="url(#a57-frame)" filter="url(#shadow)"/>
+
+  <!-- Back Glass -->
+  <rect x="56" y="36" width="288" height="628" rx="40" fill="url(#a57-back)"/>
+
+  <!-- Glossy Sheen Reflection -->
+  <path d="M 60,40 L 260,40 Q 120,320 60,560 Z" fill="#ffffff" opacity="0.12"/>
+
+  <!-- Samsung Key Island Floating Bump -->
+  <rect x="74" y="66" width="56" height="194" rx="28" fill="#0284c7" opacity="0.25" stroke="#7dd3fc" stroke-width="1"/>
+
+  <!-- Camera 1 -->
+  <g transform="translate(78, 72)">
+    <circle cx="24" cy="24" r="23" fill="#0f172a" stroke="#bae6fd" stroke-width="2.5"/>
+    <circle cx="24" cy="24" r="17" fill="url(#a57-lens)"/>
+    <circle cx="19" cy="19" r="4.5" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <!-- Camera 2 -->
+  <g transform="translate(78, 134)">
+    <circle cx="24" cy="24" r="23" fill="#0f172a" stroke="#bae6fd" stroke-width="2.5"/>
+    <circle cx="24" cy="24" r="17" fill="url(#a57-lens)"/>
+    <circle cx="19" cy="19" r="4.5" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <!-- Camera 3 -->
+  <g transform="translate(78, 196)">
+    <circle cx="24" cy="24" r="23" fill="#0f172a" stroke="#bae6fd" stroke-width="2.5"/>
+    <circle cx="24" cy="24" r="17" fill="url(#a57-lens)"/>
+    <circle cx="19" cy="19" r="4.5" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <!-- LED Flash -->
+  <circle cx="152" cy="96" r="9" fill="#0f172a" stroke="#7dd3fc" stroke-width="1.5"/>
+  <circle cx="152" cy="96" r="6" fill="#fef08a" opacity="0.9"/>
+
+  <!-- Samsung Brand Logo -->
+  <text x="200" y="616" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#ffffff" opacity="0.85" text-anchor="middle">SAMSUNG</text>
+</svg>
