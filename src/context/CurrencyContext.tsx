@@ -22,8 +22,10 @@ const CurrencyContext = createContext<CurrencyContextType | undefined>(undefined
 export function CurrencyProvider({ children }: { children: React.ReactNode }) {
   const [currency, setCurrencyState] = useState<Currency>('UZS');
   const [exchangeRate, setExchangeRateState] = useState<number>(DEFAULT_EXCHANGE_RATE);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     try {
       const savedCurrency = localStorage.getItem('az_currency') as Currency | null;
       if (savedCurrency === 'UZS' || savedCurrency === 'USD') {
@@ -59,8 +61,9 @@ export function CurrencyProvider({ children }: { children: React.ReactNode }) {
   const formatPrice = (amountInUZS: number, options?: { showDual?: boolean }) => {
     const rate = exchangeRate || DEFAULT_EXCHANGE_RATE;
     const amountInUSD = Math.round(amountInUZS / rate);
+    const activeCurrency = isMounted ? currency : 'UZS';
 
-    if (currency === 'USD') {
+    if (activeCurrency === 'USD') {
       return {
         primary: `$${amountInUSD.toLocaleString()}`,
         secondary: options?.showDual ? `≈ ${amountInUZS.toLocaleString()} so'm` : undefined,

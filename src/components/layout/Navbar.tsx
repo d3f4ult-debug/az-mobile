@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
@@ -25,6 +25,14 @@ export function Navbar() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchExpandedMobile, setIsSearchExpandedMobile] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const activeCurrency = isMounted ? currency : 'UZS';
+  const activeItemCount = isMounted ? itemCount : 0;
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -75,7 +83,7 @@ export function Navbar() {
                 type="button"
                 onClick={() => setCurrency('UZS')}
                 className={`px-2 py-0.5 text-[11px] font-semibold rounded-md transition-colors cursor-pointer ${
-                  currency === 'UZS'
+                  activeCurrency === 'UZS'
                     ? 'bg-neutral-200 text-neutral-950 shadow-xs'
                     : 'text-neutral-400 hover:text-white'
                 }`}
@@ -86,7 +94,7 @@ export function Navbar() {
                 type="button"
                 onClick={() => setCurrency('USD')}
                 className={`px-2 py-0.5 text-[11px] font-semibold rounded-md transition-colors cursor-pointer ${
-                  currency === 'USD'
+                  activeCurrency === 'USD'
                     ? 'bg-neutral-200 text-neutral-950 shadow-xs'
                     : 'text-neutral-400 hover:text-white'
                 }`}
@@ -180,12 +188,12 @@ export function Navbar() {
             <button
               onClick={openCart}
               className="relative p-2.5 rounded-full text-neutral-800 hover:text-black hover:bg-neutral-100 transition-colors active:scale-95 cursor-pointer"
-              aria-label={`Savatcha (${itemCount} ta mahsulot)`}
+              aria-label={`Savatcha (${activeItemCount} ta mahsulot)`}
             >
               <ShoppingBag className="w-5 h-5" />
-              {itemCount > 0 && (
+              {activeItemCount > 0 && (
                 <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center animate-in zoom-in-50">
-                  {itemCount}
+                  {activeItemCount}
                 </span>
               )}
             </button>
