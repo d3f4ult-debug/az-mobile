@@ -52,11 +52,23 @@ export function ProductCard({ product }: ProductCardProps) {
         )}
       </div>
 
-      {/* Image Container */}
+      {/* Image Container with SALE / AKSIYA & BONUS GIFT BADGES */}
       <Link
         href={`/products/${product.slug || product.id}`}
         className="relative aspect-square w-full rounded-xl bg-neutral-50 flex items-center justify-center overflow-hidden mb-4 group-hover:bg-neutral-100/70 transition-colors p-3"
       >
+        {/* Floating Top-Left: SALE / AKSIYA Badge */}
+        <div className="absolute top-2.5 left-2.5 z-10 flex flex-col gap-1 items-start">
+          <span className="px-2 py-0.5 rounded-full bg-rose-600 text-white font-bold text-[9px] uppercase tracking-wider shadow-sm flex items-center gap-1">
+            <span>🔥</span> AKSIYA / SALE
+          </span>
+          {product.category === 'Phones' && (
+            <span className="px-2 py-0.5 rounded-full bg-emerald-600 text-white font-semibold text-[9px] shadow-sm flex items-center gap-1">
+              <span>🎁</span> + Naushnik Sovg&apos;a!
+            </span>
+          )}
+        </div>
+
         {product.images && product.images.length > 0 ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img

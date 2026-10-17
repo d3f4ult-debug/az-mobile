@@ -5,7 +5,7 @@ import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import { SlidersHorizontal, RotateCcw, X, Check } from 'lucide-react';
 
 const FILTER_OPTIONS = {
-  brands: ['Apple', 'Samsung', 'Xiaomi', 'Honor', 'Infinix', 'Google Pixel', 'OnePlus'],
+  brands: ['Apple', 'Samsung', 'Xiaomi', 'Honor', 'Bushnell', 'Apexel', 'Infinix', 'Google Pixel', 'OnePlus'],
   rams: ['6GB', '8GB', '12GB', '16GB'],
   storages: ['128GB', '256GB', '512GB', '1TB'],
 };

@@ -29,7 +29,7 @@ export function Footer() {
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-white">Tezkor yetkazib berish</p>
-                <p className="text-xs text-neutral-400">O&apos;zbekiston bo&apos;ylab kuryerlik xizmati</p>
+                <p className="text-xs text-neutral-400">Faqat O&apos;zbekiston bo&apos;yicha kuryer yoki Samovivoz</p>
               </div>
             </div>
 
@@ -156,12 +156,15 @@ export function Footer() {
               © {currentYear} AZ Mobile.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-1.5 gap-x-6">
-              <p><span className="text-neutral-300 font-medium font-sans">Legal Entity:</span> &quot;AL-SAFI PREMIUM&quot; mas&apos;uliyati cheklangan jamiyati (LLC)</p>
+              <p><span className="text-neutral-300 font-medium font-sans">Legal Entity:</span> &quot;AZ MOBILE&quot; mas&apos;uliyati cheklangan jamiyati (LLC)</p>
               <p><span className="text-neutral-300 font-medium font-sans">TIN (STIR):</span> 313 323 610</p>
               <p><span className="text-neutral-300 font-medium font-sans">Director:</span> Ergashev Azizbek Anvarovich</p>
               <p><span className="text-neutral-300 font-medium font-sans">State Registration:</span> №3343366</p>
               <p className="md:col-span-2">
                 <span className="text-neutral-300 font-medium font-sans">Address:</span> 171 Shahrikhon shoh Street, Yangihayot MFY, Shahrikhon, Shahrikhon district, Andijan region, Uzbekistan
+              </p>
+              <p className="md:col-span-2 text-neutral-400 text-[11px] pt-1">
+                <span className="text-amber-400 font-medium font-sans">Yetkazib berish qoidalari:</span> Tezkor kuryerlik xizmati faqat O&apos;zbekiston hududi bo&apos;yicha mavjud. Chet el fuqarolariga — faqat do&apos;kondan o&apos;zi olib ketish (Samovivoz).
               </p>
             </div>
           </div>

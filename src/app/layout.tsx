@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'AZ Mobile | Flagman smartfonlar va texnika do\'koni',
   description:
-    'Sertifikatlangan mobil telefonlar, planshetlar va aksessuarlar. Rasmiy kafolat bilan "AL-SAFI PREMIUM" MChJ.',
+    'Sertifikatlangan mobil telefonlar, planshetlar va aksessuarlar. Rasmiy kafolat bilan "AZ MOBILE" MChJ.',
 };
 
 export default function RootLayout({

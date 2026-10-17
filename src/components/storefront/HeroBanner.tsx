@@ -9,26 +9,26 @@ export function HeroBanner() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-6 text-center space-y-6">
-        {/* Status Pill */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-800/80 border border-neutral-700/60 text-xs font-medium text-neutral-300">
-          <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-          <span>AZ Mobile Flagman Do&apos;koni</span>
+        {/* Status Pill with Sale Callout */}
+        <div className="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 border border-rose-500/30 text-xs font-semibold text-rose-300">
+          <span className="w-2 h-2 rounded-full bg-rose-500 animate-ping" />
+          <span>🔥 KATTA AKSIYA / SALE: Telefonlarga simsiz naushnik sovg&apos;aga!</span>
           <span className="text-neutral-500">•</span>
-          <span className="text-neutral-400">Neon PostgreSQL Baza</span>
+          <span className="text-amber-300">🚚 O&apos;zbekiston bo&apos;ylab kuryer yoki Samovivoz</span>
         </div>
 
         {/* Main Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-          Keyingi avlod texnologiyalari. <br className="hidden sm:inline" />
+          Flagman smartfonlar va texnika. <br className="hidden sm:inline" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 via-neutral-300 to-neutral-400">
-            Yuqori aniqlikda yaratilgan.
+            Har bir telefonga bepul naushnik!
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="max-w-2xl mx-auto text-base sm:text-lg text-neutral-400 leading-relaxed font-normal">
-          Sertifikatlangan original smartfonlar, yuqori unumli planshetlar va original aksessuarlar.
-          Rasmiy kafolat hamda O&apos;zbekiston bo&apos;ylab tezkor yetkazib berish xizmati.
+          Sertifikatlangan original smartfonlar, planshetlar va ommabop aksessuarlar.
+          Tezkor kuryerlik xizmati faqat O&apos;zbekiston bo&apos;yicha, chet el fuqarolariga — faqat o&apos;zi olib ketish (Samovivoz).
         </p>
 
         {/* CTAs */}

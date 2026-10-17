@@ -161,6 +161,18 @@ export function PDPView({ product, slug }: PDPViewProps) {
         {/* Gallery */}
         <div className="space-y-4">
           <div className="relative aspect-square w-full rounded-3xl bg-neutral-50 border border-neutral-200/80 flex items-center justify-center p-8 overflow-hidden">
+            {/* Promo Badges */}
+            <div className="absolute top-4 left-4 z-10 flex flex-col gap-1.5 items-start">
+              <span className="px-3 py-1 rounded-full bg-rose-600 text-white font-bold text-xs uppercase tracking-wider shadow-md flex items-center gap-1.5">
+                <span>🔥</span> AKSIYA / SALE
+              </span>
+              {product.category === 'Phones' && (
+                <span className="px-3 py-1 rounded-full bg-emerald-600 text-white font-semibold text-xs shadow-md flex items-center gap-1.5">
+                  <span>🎁</span> + Bepul Simsiz Naushnik Sovg&apos;aga!
+                </span>
+              )}
+            </div>
+
             {currentImages.length > 0 ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -238,6 +250,34 @@ export function PDPView({ product, slug }: PDPViewProps) {
                   Buyurtma asosida
                 </span>
               )}
+            </div>
+          </div>
+
+          {/* Promotional Gift Earphones Banner */}
+          {product.category === 'Phones' && (
+            <div className="p-4 rounded-2xl bg-gradient-to-r from-rose-50 via-amber-50 to-emerald-50 border border-amber-200/80 space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="px-2 py-0.5 rounded-md bg-rose-600 text-white font-bold text-[10px] uppercase tracking-wider">
+                  🔥 KATTA AKSIYA / SALE
+                </span>
+                <span className="text-xs font-bold text-neutral-900">
+                  Har bir telefonga maxsus sovg&apos;a!
+                </span>
+              </div>
+              <p className="text-xs text-neutral-700 leading-relaxed">
+                🎁 <strong>Bonus reklama:</strong> Ushbu telefonni bugun xarid qilsangiz, qo&apos;shimcha <strong>Simsiz Bluetooth Naushnik (AirPods analog)</strong> mutlaqo <strong>BEPUL</strong> sovg&apos;a qilinadi!
+              </p>
+            </div>
+          )}
+
+          {/* Delivery Terms Alert */}
+          <div className="p-3.5 rounded-xl bg-neutral-50 border border-neutral-200 text-xs text-neutral-700 leading-relaxed flex items-start gap-2.5">
+            <span className="text-base shrink-0">🚚</span>
+            <div>
+              <span className="font-semibold text-neutral-950">Yetkazib berish xizmati:</span>
+              <p className="text-[11px] text-neutral-600 mt-0.5">
+                Tezkor kuryerlik faqat <strong>O&apos;zbekiston bo&apos;yicha</strong> mavjud. Chet el fuqarolariga — faqat do&apos;kondan o&apos;zi olib ketish (<strong>Samovivoz</strong>).
+              </p>
             </div>
           </div>
 
@@ -356,7 +396,7 @@ export function PDPView({ product, slug }: PDPViewProps) {
             <div className="space-y-1">
               <Truck className="w-5 h-5 mx-auto text-neutral-700" />
               <p className="text-[11px] font-semibold text-neutral-900">Tezkor yetkazib berish</p>
-              <p className="text-[10px] text-neutral-500">O&apos;zbekiston bo&apos;ylab</p>
+              <p className="text-[10px] text-neutral-500">Faqat O&apos;zb (chet elga: samovivoz)</p>
             </div>
             <div className="space-y-1">
               <RotateCcw className="w-5 h-5 mx-auto text-neutral-700" />

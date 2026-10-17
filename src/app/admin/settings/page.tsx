@@ -90,7 +90,7 @@ export default async function AdminSettingsPage() {
           <div className="p-3.5 rounded-xl bg-neutral-900/80 border border-neutral-800 space-y-1">
             <span className="text-neutral-500 uppercase tracking-wider text-[10px]">Tashkilot Nomi</span>
             <p className="text-sm font-semibold text-white font-sans">
-              &quot;AL-SAFI PREMIUM&quot; mas&apos;uliyati cheklangan jamiyati (LLC)
+              &quot;AZ MOBILE&quot; mas&apos;uliyati cheklangan jamiyati (LLC)
             </p>
           </div>
 

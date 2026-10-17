@@ -26,10 +26,10 @@ export function CategoryGrid() {
       title: 'Original aksessuarlar',
       category: 'Accessories',
       href: '/products?category=Accessories',
-      description: 'GaN quvvatlagichlar, simsiz quloqchinlar, g\'ilof va himoya oynalari',
+      description: 'Aqlli audio ko\'zoynaklar (ochki), professional HD durbinlar (binokl) va simsiz quloqchinlar',
       icon: Headphones,
       accent: 'from-emerald-600/10 to-teal-600/5',
-      tag: 'Muhim jihozlar',
+      tag: 'Bestseller',
     },
   ];
 

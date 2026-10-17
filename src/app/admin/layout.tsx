@@ -122,7 +122,7 @@ export default function AdminLayout({
             <div className="flex items-center gap-2 mb-1">
               <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
               <span className="text-[11px] font-semibold text-neutral-200 truncate">
-                AL-SAFI PREMIUM MChJ
+                AZ MOBILE MChJ
               </span>
             </div>
             <p className="text-[10px] text-neutral-400">STIR: 313 323 610</p>

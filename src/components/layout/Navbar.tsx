@@ -44,8 +44,23 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-neutral-200/80 bg-white/90 backdrop-blur-md transition-all">
+      {/* Top Announcement: Delivery terms & Phone Gift Promo */}
+      <div className="bg-neutral-950 text-neutral-200 py-1.5 px-4 text-center text-[11px] sm:text-xs border-b border-neutral-800 flex items-center justify-center gap-2 overflow-x-auto whitespace-nowrap">
+        <span className="inline-flex items-center gap-1 text-emerald-400 font-semibold">
+          <span>🚚</span> Tezkor kuryerlik faqat O&apos;zbekiston bo&apos;yicha
+        </span>
+        <span className="text-neutral-500">•</span>
+        <span className="text-amber-300 font-semibold">
+          Chet el fuqarolariga — faqat Samovivoz
+        </span>
+        <span className="text-neutral-500 hidden md:inline">•</span>
+        <span className="inline-flex items-center gap-1 text-rose-400 font-semibold hidden md:inline-flex">
+          <span>🎁</span> Telefonlarga simsiz naushnik bonus!
+        </span>
+      </div>
+
       {/* Top Bar: Exchange Rate Ticker & Currency Toggle */}
-      <div className="bg-neutral-950 text-neutral-300 py-1.5 px-4 sm:px-6 lg:px-8 text-xs border-b border-neutral-800">
+      <div className="bg-neutral-900/90 text-neutral-300 py-1 px-4 sm:px-6 lg:px-8 text-xs border-b border-neutral-800">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-[11px] font-mono text-neutral-400">
             <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />

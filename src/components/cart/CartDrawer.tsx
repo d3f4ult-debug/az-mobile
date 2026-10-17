@@ -128,8 +128,13 @@ export function CartDrawer() {
             </div>
             <div className="flex justify-between text-xs text-neutral-400">
               <span>Yetkazib berish</span>
-              <span>Kuryer orqali bepul</span>
+              <span className="text-emerald-600 font-medium">O&apos;zbekiston bo&apos;ylab bepul</span>
             </div>
+          </div>
+
+          {/* Delivery terms for Uzbekistan vs Foreigners */}
+          <div className="rounded-xl bg-amber-50 border border-amber-200/60 p-2.5 text-[11px] text-amber-900 leading-snug">
+            <span className="font-semibold">🚚 Diqqat:</span> Tezkor kuryerlik faqat O&apos;zbekiston bo&apos;yicha mavjud. Chet el fuqarolari uchun — faqat do&apos;kondan o&apos;zi olib ketish (Samovivoz).
           </div>
 
           <button
